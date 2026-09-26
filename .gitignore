@@ -8,7 +8,6 @@ venv/
 env/
 
 # Data
-*.csv
 *.xlsx
 *.parquet
 data/raw/

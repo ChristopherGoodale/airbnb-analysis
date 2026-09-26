@@ -1,0 +1,301 @@
+{
+  "generated_at": "2026-09-26T18:37:34.335248+00:00",
+  "n_rows_raw": 41533,
+  "n_rows_used": 41503,
+  "rows_dropped": {
+    "price_zero": 30
+  },
+  "price_transform": "log1p",
+  "feature_columns_used": [
+    "accommodates",
+    "bathrooms",
+    "bedrooms",
+    "beds",
+    "number_of_reviews",
+    "latitude",
+    "longitude",
+    "price_log",
+    "room_type_Hotel room",
+    "room_type_Private room",
+    "room_type_Shared room",
+    "neighbourhood_group_Brooklyn",
+    "neighbourhood_group_Manhattan",
+    "neighbourhood_group_Queens",
+    "neighbourhood_group_Staten Island"
+  ],
+  "pca": {
+    "n_components": 15,
+    "explained_variance_ratio": [
+      0.22740044424103784,
+      0.16223168669944593,
+      0.12940184672737254,
+      0.07394919850291824,
+      0.07326529636981147,
+      0.06968409468452565,
+      0.06361680009090313,
+      0.060940813767466025,
+      0.03723684163478665,
+      0.030395402589409766,
+      0.02381287010475845,
+      0.017650367007374032,
+      0.01473853676877336,
+      0.013285944009024653,
+      0.002389856802392244
+    ],
+    "cumulative_explained_variance": [
+      0.22740044424103784,
+      0.38963213094048377,
+      0.5190339776678563,
+      0.5929831761707746,
+      0.6662484725405861,
+      0.7359325672251117,
+      0.7995493673160148,
+      0.8604901810834809,
+      0.8977270227182675,
+      0.9281224253076773,
+      0.9519352954124357,
+      0.9695856624198097,
+      0.984324199188583,
+      0.9976101431976077,
+      0.9999999999999999
+    ],
+    "price_correlation_by_component": [
+      {
+        "component": "PC1",
+        "correlation_with_price": 0.7263857982815185
+      },
+      {
+        "component": "PC2",
+        "correlation_with_price": 0.30160970485378336
+      },
+      {
+        "component": "PC3",
+        "correlation_with_price": -0.0842443021517302
+      },
+      {
+        "component": "PC4",
+        "correlation_with_price": 0.13819743950411012
+      },
+      {
+        "component": "PC5",
+        "correlation_with_price": -0.09473724018753853
+      },
+      {
+        "component": "PC6",
+        "correlation_with_price": -0.09071807431038943
+      },
+      {
+        "component": "PC7",
+        "correlation_with_price": 0.020562641429826254
+      },
+      {
+        "component": "PC8",
+        "correlation_with_price": -0.20647309441211895
+      },
+      {
+        "component": "PC9",
+        "correlation_with_price": 0.3538316108094566
+      },
+      {
+        "component": "PC10",
+        "correlation_with_price": 0.17722461139773013
+      },
+      {
+        "component": "PC11",
+        "correlation_with_price": 0.3253447928116123
+      },
+      {
+        "component": "PC12",
+        "correlation_with_price": 0.15148703414823397
+      },
+      {
+        "component": "PC13",
+        "correlation_with_price": -0.013856790142356808
+      },
+      {
+        "component": "PC14",
+        "correlation_with_price": 0.09664530872349081
+      },
+      {
+        "component": "PC15",
+        "correlation_with_price": 0.0023441181129810716
+      }
+    ],
+    "correlation_threshold": 0.3,
+    "price_correlated_components": [
+      "PC1",
+      "PC2",
+      "PC9",
+      "PC11"
+    ]
+  },
+  "feature_ranking": [
+    {
+      "feature": "bedrooms",
+      "importance_score": 0.3148347597156987,
+      "loadings_by_component": {
+        "PC1": 0.45013512924698224,
+        "PC2": -0.14288836740869595,
+        "PC9": -0.25647628768595365,
+        "PC11": -0.28547560613843553
+      }
+    },
+    {
+      "feature": "beds",
+      "importance_score": 0.31386406344992207,
+      "loadings_by_component": {
+        "PC1": 0.45900002667200646,
+        "PC2": -0.12899551864858114,
+        "PC9": -0.3342174448720417,
+        "PC11": -0.15553193903902462
+      }
+    },
+    {
+      "feature": "accommodates",
+      "importance_score": 0.2982234799516899,
+      "loadings_by_component": {
+        "PC1": 0.4737542233828509,
+        "PC2": -0.08674364405071024,
+        "PC9": -0.175371549134755,
+        "PC11": 0.2548679055850617
+      }
+    },
+    {
+      "feature": "neighbourhood_group_Manhattan",
+      "importance_score": 0.28016524564251455,
+      "loadings_by_component": {
+        "PC1": 0.08090344274521115,
+        "PC2": 0.5935989216644655,
+        "PC9": 0.0844227694361354,
+        "PC11": -0.35374647082275557
+      }
+    },
+    {
+      "feature": "bathrooms",
+      "importance_score": 0.24318304198039567,
+      "loadings_by_component": {
+        "PC1": 0.32460087560350376,
+        "PC2": -0.09376477076208871,
+        "PC9": 0.5115813967135674,
+        "PC11": -0.06393625723604304
+      }
+    },
+    {
+      "feature": "latitude",
+      "importance_score": 0.21828919806118063,
+      "loadings_by_component": {
+        "PC1": -0.016365144937653533,
+        "PC2": 0.43040553693050776,
+        "PC9": -0.39352829446710746,
+        "PC11": 0.4274314580642286
+      }
+    },
+    {
+      "feature": "room_type_Private room",
+      "importance_score": 0.18682304979415806,
+      "loadings_by_component": {
+        "PC1": -0.2835087996328333,
+        "PC2": -0.07993466129830919,
+        "PC9": -0.020086428808466183,
+        "PC11": 0.2524617667006904
+      }
+    },
+    {
+      "feature": "neighbourhood_group_Brooklyn",
+      "importance_score": 0.1833867068125004,
+      "loadings_by_component": {
+        "PC1": -0.02035250012412935,
+        "PC2": -0.4292895959597085,
+        "PC9": -0.11118490112886677,
+        "PC11": 0.17790134370272226
+      }
+    },
+    {
+      "feature": "longitude",
+      "importance_score": 0.17803297322105707,
+      "loadings_by_component": {
+        "PC1": -0.08650678609261817,
+        "PC2": -0.33098815648992264,
+        "PC9": -0.05936326952192794,
+        "PC11": 0.19557824194414397
+      }
+    },
+    {
+      "feature": "neighbourhood_group_Queens",
+      "importance_score": 0.15931861579936496,
+      "loadings_by_component": {
+        "PC1": -0.07406756671560145,
+        "PC2": -0.2458631982223671,
+        "PC9": 0.3060061339522473,
+        "PC11": -0.15443356707287612
+      }
+    },
+    {
+      "feature": "room_type_Hotel room",
+      "importance_score": 0.04262343863001274,
+      "loadings_by_component": {
+        "PC1": 0.012486035069002041,
+        "PC2": 0.07646038445904121,
+        "PC9": -0.09856725985690636,
+        "PC11": -0.012415528165548792
+      }
+    },
+    {
+      "feature": "number_of_reviews",
+      "importance_score": 0.03995298974626171,
+      "loadings_by_component": {
+        "PC1": 0.009959220736582638,
+        "PC2": -0.07031224071975453,
+        "PC9": 0.09904205428444014,
+        "PC11": -0.027147887618217594
+      }
+    },
+    {
+      "feature": "neighbourhood_group_Staten Island",
+      "importance_score": 0.03711331695798414,
+      "loadings_by_component": {
+        "PC1": 0.023475580339182286,
+        "PC2": -0.010370056703404207,
+        "PC9": -0.11386486038232563,
+        "PC11": 0.22952382844300404
+      }
+    },
+    {
+      "feature": "room_type_Shared room",
+      "importance_score": 0.025681394818215155,
+      "loadings_by_component": {
+        "PC1": -0.028668535823223103,
+        "PC2": 0.007586494003971336,
+        "PC9": 0.03862371965292011,
+        "PC11": 0.10019394958976643
+      }
+    }
+  ],
+  "borough_concentration": [
+    {
+      "neighbourhood_group": "Manhattan",
+      "listing_count": 17309,
+      "pct_of_total": 41.71
+    },
+    {
+      "neighbourhood_group": "Brooklyn",
+      "listing_count": 15684,
+      "pct_of_total": 37.79
+    },
+    {
+      "neighbourhood_group": "Queens",
+      "listing_count": 6519,
+      "pct_of_total": 15.71
+    },
+    {
+      "neighbourhood_group": "Bronx",
+      "listing_count": 1586,
+      "pct_of_total": 3.82
+    },
+    {
+      "neighbourhood_group": "Staten Island",
+      "listing_count": 405,
+      "pct_of_total": 0.98
+    }
+  ]
+}
