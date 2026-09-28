@@ -1,0 +1,222 @@
+{
+  "generated_at": "2026-09-28T14:57:39.235553+00:00",
+  "n_rows_used": 41503,
+  "target": "price_log",
+  "note": "Coefficients are on standardized features fit on the training split, so magnitude is directly comparable across features and reflects each feature's effect holding the others constant. This is a separate model from the PCA in analyze.py, not PCA-derived.",
+  "train_test_split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "n_train": 33202,
+    "n_test": 8301
+  },
+  "feature_columns_used": [
+    "accommodates",
+    "bathrooms",
+    "bedrooms",
+    "beds",
+    "number_of_reviews",
+    "latitude",
+    "longitude",
+    "room_type_Hotel room",
+    "room_type_Private room",
+    "room_type_Shared room",
+    "neighbourhood_group_Brooklyn",
+    "neighbourhood_group_Manhattan",
+    "neighbourhood_group_Queens",
+    "neighbourhood_group_Staten Island"
+  ],
+  "models": {
+    "ols": {
+      "test_r2": 0.5319039202065108,
+      "test_rmse": 0.549929773537183,
+      "intercept": 4.9503906643438285,
+      "coefficients": [
+        {
+          "feature": "accommodates",
+          "coefficient": 0.31422250221614834
+        },
+        {
+          "feature": "room_type_Private room",
+          "coefficient": -0.20342063556180062
+        },
+        {
+          "feature": "longitude",
+          "coefficient": -0.16541529293752827
+        },
+        {
+          "feature": "neighbourhood_group_Brooklyn",
+          "coefficient": -0.14593954573608034
+        },
+        {
+          "feature": "neighbourhood_group_Staten Island",
+          "coefficient": -0.10591363974678027
+        },
+        {
+          "feature": "neighbourhood_group_Manhattan",
+          "coefficient": 0.09760779680520199
+        },
+        {
+          "feature": "latitude",
+          "coefficient": -0.09639731650021434
+        },
+        {
+          "feature": "bathrooms",
+          "coefficient": 0.08371158129744947
+        },
+        {
+          "feature": "room_type_Shared room",
+          "coefficient": -0.06806848330047077
+        },
+        {
+          "feature": "bedrooms",
+          "coefficient": 0.044507817452129596
+        },
+        {
+          "feature": "room_type_Hotel room",
+          "coefficient": 0.03877822575496913
+        },
+        {
+          "feature": "neighbourhood_group_Queens",
+          "coefficient": -0.034217616540488494
+        },
+        {
+          "feature": "beds",
+          "coefficient": -0.023264073345504798
+        },
+        {
+          "feature": "number_of_reviews",
+          "coefficient": -0.0027917195837858073
+        }
+      ]
+    },
+    "ridge": {
+      "alpha": 28.072162039411786,
+      "test_r2": 0.5318798948786964,
+      "test_rmse": 0.5499438861030932,
+      "intercept": 4.950390664343832,
+      "coefficients": [
+        {
+          "feature": "accommodates",
+          "coefficient": 0.31359311258537426
+        },
+        {
+          "feature": "room_type_Private room",
+          "coefficient": -0.2033583580122601
+        },
+        {
+          "feature": "longitude",
+          "coefficient": -0.16499572919300912
+        },
+        {
+          "feature": "neighbourhood_group_Brooklyn",
+          "coefficient": -0.1442777181490423
+        },
+        {
+          "feature": "neighbourhood_group_Staten Island",
+          "coefficient": -0.10532124290417066
+        },
+        {
+          "feature": "neighbourhood_group_Manhattan",
+          "coefficient": 0.09886361614286351
+        },
+        {
+          "feature": "latitude",
+          "coefficient": -0.09578826349384227
+        },
+        {
+          "feature": "bathrooms",
+          "coefficient": 0.08362958929805367
+        },
+        {
+          "feature": "room_type_Shared room",
+          "coefficient": -0.06803156923086702
+        },
+        {
+          "feature": "bedrooms",
+          "coefficient": 0.04459583786633699
+        },
+        {
+          "feature": "room_type_Hotel room",
+          "coefficient": 0.03876560613834099
+        },
+        {
+          "feature": "neighbourhood_group_Queens",
+          "coefficient": -0.03344447159576104
+        },
+        {
+          "feature": "beds",
+          "coefficient": -0.022761183964320843
+        },
+        {
+          "feature": "number_of_reviews",
+          "coefficient": -0.002802684772551752
+        }
+      ]
+    },
+    "lasso": {
+      "alpha": 0.0004477618105665822,
+      "test_r2": 0.5318002499437036,
+      "test_rmse": 0.5499906672407949,
+      "intercept": 4.950390664343832,
+      "n_features_zeroed": 0,
+      "coefficients": [
+        {
+          "feature": "accommodates",
+          "coefficient": 0.313068007824718
+        },
+        {
+          "feature": "room_type_Private room",
+          "coefficient": -0.2031659721150704
+        },
+        {
+          "feature": "longitude",
+          "coefficient": -0.16453332135477536
+        },
+        {
+          "feature": "neighbourhood_group_Brooklyn",
+          "coefficient": -0.1377867811974674
+        },
+        {
+          "feature": "neighbourhood_group_Staten Island",
+          "coefficient": -0.10328678051064101
+        },
+        {
+          "feature": "neighbourhood_group_Manhattan",
+          "coefficient": 0.10327176400239042
+        },
+        {
+          "feature": "latitude",
+          "coefficient": -0.09309519991498408
+        },
+        {
+          "feature": "bathrooms",
+          "coefficient": 0.08316373139504765
+        },
+        {
+          "feature": "room_type_Shared room",
+          "coefficient": -0.06769510185626537
+        },
+        {
+          "feature": "bedrooms",
+          "coefficient": 0.04330185826663925
+        },
+        {
+          "feature": "room_type_Hotel room",
+          "coefficient": 0.038379245093043766
+        },
+        {
+          "feature": "neighbourhood_group_Queens",
+          "coefficient": -0.02954093221639402
+        },
+        {
+          "feature": "beds",
+          "coefficient": -0.02063061412006558
+        },
+        {
+          "feature": "number_of_reviews",
+          "coefficient": -0.0025058099773923215
+        }
+      ]
+    }
+  }
+}
